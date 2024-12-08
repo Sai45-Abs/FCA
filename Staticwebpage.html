@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Smartphone Preferences</title>
+</head>
+<body bgcolor="LightGray">
+
+    <!-- Page Title -->
+    <div align="center">
+        <h1 style="color: blue;">Exploring Smartphone Preferences</h1>
+        <p>Understanding consumer trends in the smartphone market.</p>
+    </div>
+
+    <!-- Hyperlink Section -->
+    <div>
+        <p>For reference, here's our dataset: <a href="dataset.html" target="_blank" style="text-decoration: none; color: blue;">Dataset Page</a>.</p>
+    </div>
+
+    <!-- Dataset Table -->
+    <h2 style="color: darkgreen;" align="center">Smartphone Survey Data</h2>
+    <table border="1" align="center" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Likelihood to Recommend</th>
+                <th>Number of Responses</th>
+                <th>Buying Again</th>
+                <th>Performance as Reason for Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Extremely Likely</td>
+                <td>14</td>
+                <td>Yes For Buying Again: 22</td>
+                <td>Performance: 14</td>
+            </tr>
+            <tr>
+                <td>Somewhat Likely</td>
+                <td>30</td>
+                <td>Maybe For Buying Again: 9</td>
+                <td>SAMSUNG Users - Performance: 2</td>
+            </tr>
+            <tr>
+                <td>Total Yes or Maybe</td>
+                <td>44</td>
+                <td>Yes or Maybe For Buying Again: 31</td>
+                <td>APPLE Users - Performance: 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Image Section -->
+    <div align="center" style="margin-top: 20px;">
+        <h2 style="color: purple;">Smartphone Engagement Insights</h2>
+        <img src="webpg1.png" alt="Smartphone Engagement 1" width="500">
+        <img src="webpg2.png" alt="Smartphone Engagement 2" width="500">
+        <img src="webpg3.png" alt="Smartphone Engagement 3" width="500">
+        <p>Snapshots of consumer behavior and preferences.</p>
+    </div>
+
+    <!-- Form Section with Iframe -->
+    <div style="margin-top: 20px;">
+        <h2 style="color: red;" align="center">Share Your Preferences</h2>
+        <iframe srcdoc='
+            <form action="/submit" method="POST" align="center">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="brand">Favorite Smartphone Brand:</label>
+                <select id="brand" name="brand">
+                    <option value="samsung">Samsung</option>
+                    <option value="apple">Apple</option>
+                    <option value="others">Others</option>
+                </select><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>' 
+            width="100%" height="300" frameborder="0">
+        </iframe>
+    </div>
+
+</body>
+</html>
